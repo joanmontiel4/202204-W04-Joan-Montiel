@@ -1,13 +1,12 @@
 export function strictEquals(a, b) {
+    if (
+        (Object.is(a, 0) && Object.is(b, -0)) ||
+        (Object.is(b, 0) && Object.is(a, -0))
+    ) {
+        return true;
+    }
     if (Number.isNaN(a) == true || Number.isNaN(b) == true) {
         return false;
     }
-    if (1 / a == Infinity && 1 / b == Infinity) {
-        return true;
-    }
-    if (Object.is(a, b)) {
-        return true;
-    } else {
-        return false;
-    }
+    return Object.is(a, b);
 }
