@@ -1,3 +1,5 @@
+/* eslint-disable no-compare-neg-zero */
+/* eslint-disable use-isnan */
 import { strictEqualsAlternative } from './strict-equals-alternative.js';
 import { strictEquals } from './strict-equals.js';
 //FIRST APPROACH USING OBJECT.IS{}
