@@ -4,12 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ."
     },
     "keywords": [],
-    "author": "",
+    "author": "Joan Montiel",
     "license": "ISC",
     "prettier": {
         "singleQuote": true
+    },
+    "devDependencies": {
+        "eslint": "^8.14.0",
+        "eslint-config-prettier": "^8.5.0"
     }
 }
